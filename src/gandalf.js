@@ -1,3 +1,6 @@
+var youShallNotPass = new Audio('sound/YouShallNotPass.mp3');
+youShallNotPass.volume = 0.2;
+
 var Gandalf = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
   // this.$node = $('<span class="dancer"></span>');
@@ -11,6 +14,7 @@ var Gandalf = function(top, left, timeBetweenSteps) {
 var gandalfOnClickFunc = function(event) {
   //debugger;
   $('body').css("background-image", "url('images/youShallNotPass.gif')");
+  youShallNotPass.play();
 };
 
 var gandalfMouseLeave = function(event) {
