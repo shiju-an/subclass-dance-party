@@ -37,7 +37,7 @@ $(document).ready(function() {
 
   $('.addFireLineupButton').on('click', function(event) {
     var top = 100;
-    var left = 200;
+    var left = 250;
 
     for (var i = 0; i < window.fireDancers.length; i++) {
       window.fireDancers[i].lineup(top, left);
@@ -95,5 +95,13 @@ $(document).ready(function() {
       top += 50;
     }
   });
+
+  // $('.dancer').on('click', function(event) {
+  //   //debugger;
+  //   $('body').css("background-image", "url('file:///Users/student/hrsf126-subclass-dance-party/images/youShallNotPass.gif')");
+  // });
+
+
+
 });
 

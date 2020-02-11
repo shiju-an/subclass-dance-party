@@ -31,6 +31,8 @@
 //   return dancer;
 // };
 
+
+
 var Dancer = function (top, left, timeBetweenSteps) {
   this.$node = $('<img class="dancer">');
   this.timeBetweenSteps = timeBetweenSteps;
