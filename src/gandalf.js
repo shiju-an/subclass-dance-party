@@ -1,7 +1,8 @@
 var Gandalf = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
   // this.$node = $('<span class="dancer"></span>');
-  this.$node = $('<span class="dancer gandalf"></span>');
+  //this.$node = $('<span class="dancer gandalf"></span>');
+  this.$node.addClass("gandalf");
 };
 
 
