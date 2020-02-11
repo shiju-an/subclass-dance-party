@@ -1,7 +1,7 @@
 var Gandalf = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
   // this.$node = $('<span class="dancer"></span>');
-  this.$node = $('<span class="gandalf"></span>');
+  this.$node = $('<span class="dancer gandalf"></span>');
 };
 
 
@@ -13,10 +13,10 @@ Gandalf.prototype.step = function() {
   this.$node.toggle();
 };
 
-// Gandalf.prototype.setPosition = function(top, left) {
+// Gandalf.prototype.setPosition = function(top, right) {
 //   var styleSettings = {
 //     top: top,
-//     left: left
+//     right: right
 //   };
 //   this.$node.css(styleSettings);
 // };

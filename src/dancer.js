@@ -36,7 +36,6 @@ var Dancer = function (top, left, timeBetweenSteps) {
   this.timeBetweenSteps = timeBetweenSteps;
   this.setPosition(top, left);
   this.step();
-  console.log(this.$node, 'dancer');
 };
 
 Dancer.prototype.step = function() {
