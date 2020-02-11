@@ -3,8 +3,9 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  /* background-color:#444; */
   font-size: 18px;
+  background-image: url('file:///Users/student/hrsf126-subclass-dance-party/images/bridge.jpg');
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -30,5 +31,17 @@ body, a:link, a:visited, a:active{
 }
 
 .gandalf{
-  border:10px solid grey;
+  /* border:10px solid grey; */
+  background-image: url('file:///Users/student/hrsf126-subclass-dance-party/images/gandalf.png');
+}
+
+.gandalfimage{
+  background-image: url('file:///Users/student/hrsf126-subclass-dance-party/images/gandalf.png');
+}
+
+
+
+.balrog{
+
+  border:10px solid rgb(0, 0, 0);
 }

@@ -21,7 +21,7 @@ $(document).ready(function() {
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
     // make a dancer with a random position
-    
+
     var dancer = new dancerMakerFunction(
       $("body").height() * Math.random(),
       $("body").width() * Math.random(),
@@ -39,13 +39,31 @@ $(document).ready(function() {
     var gandalfMakerFunction = window[gandalfMakerFunctionName];
 
     // make a dancer with a random position
-
+  
     var gandalfDance = new gandalfMakerFunction(
       $("body").height() * Math.random(),
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
     $('body').append(gandalfDance.$node);
+
+  });
+
+  $('.addBalrogButton').on('click', function(event) {
+    //debugger;
+    var balrogMakerFunctionName = $(this).data('dancer-maker-function-name');
+
+    // get the maker function for the kind of dancer we're supposed to make
+    var balrogMakerFunction = window[balrogMakerFunctionName];
+
+    // make a dancer with a random position
+
+    var balrogDance = new balrogMakerFunction(
+      $("body").height() * Math.random(),
+      $("body").width() * Math.random(),
+      Math.random() * 1000
+    );
+    $('body').append(balrogDance.$node);
 
   });
 
