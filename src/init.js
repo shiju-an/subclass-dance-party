@@ -1,5 +1,7 @@
 $(document).ready(function() {
-  window.dancers = [];
+  window.fireDancers = [];
+  window.gandalfDancers = [];
+  window.balrogDancers = [];
 
   $('.addDancerButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
@@ -29,16 +31,24 @@ $(document).ready(function() {
     );
     $('body').append(dancer.$node);
 
+    window.fireDancers.push(dancer);
+    console.log(window.fireDancers);
+  });
+
+  $('.addFireLineupButton').on('click', function(event) {
+    var top = 100;
+    var left = 200;
+
+    for (var i = 0; i < window.fireDancers.length; i++) {
+      window.fireDancers[i].lineup(top, left);
+      top += 50;
+    }
   });
 
   $('.addGandalfButton').on('click', function(event) {
-    //debugger;
     var gandalfMakerFunctionName = $(this).data('dancer-maker-function-name');
 
-    // get the maker function for the kind of dancer we're supposed to make
     var gandalfMakerFunction = window[gandalfMakerFunctionName];
-
-    // make a dancer with a random position
 
     var gandalfDance = new gandalfMakerFunction(
       $("body").height() * Math.random(),
@@ -47,16 +57,23 @@ $(document).ready(function() {
     );
     $('body').append(gandalfDance.$node);
 
+    window.gandalfDancers.push(gandalfDance);
+  });
+
+  $('.addGandalfLineupButton').on('click', function(event) {
+    var top = 100;
+    var left = 500;
+
+    for (var i = 0; i < window.gandalfDancers.length; i++) {
+      window.gandalfDancers[i].lineup(top, left);
+      top += 50;
+    }
   });
 
   $('.addBalrogButton').on('click', function(event) {
-    //debugger;
     var balrogMakerFunctionName = $(this).data('dancer-maker-function-name');
 
-    // get the maker function for the kind of dancer we're supposed to make
     var balrogMakerFunction = window[balrogMakerFunctionName];
-
-    // make a dancer with a random position
 
     var balrogDance = new balrogMakerFunction(
       $("body").height() * Math.random(),
@@ -65,9 +82,18 @@ $(document).ready(function() {
     );
     $('body').append(balrogDance.$node);
 
+    window.balrogDancers.push(balrogDance);
   });
 
 
+  $('.addBalrogLineupButton').on('click', function(event) {
+    var top = 100;
+    var left = 100;
 
+    for (var i = 0; i < window.balrogDancers.length; i++) {
+      window.balrogDancers[i].lineup(top, left);
+      top += 50;
+    }
+  });
 });
 
