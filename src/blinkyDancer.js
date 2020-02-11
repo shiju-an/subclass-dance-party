@@ -31,12 +31,12 @@ BlinkyDancer.prototype = Object.create(Dancer.prototype);
 
 // var oldStep = Dancer.prototype.step.call(this);
 
-BlinkyDancer.prototype.step = function() {
-  //debugger;
-  // oldStep();
-  Dancer.prototype.step.call(this);
-  this.$node.toggle();
-};
+// BlinkyDancer.prototype.step = function() {
+//   //debugger;
+//   // oldStep();
+//   Dancer.prototype.step.call(this);
+//   this.$node.toggle();
+// };
 
 BlinkyDancer.prototype.constructor = BlinkyDancer;
 

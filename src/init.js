@@ -32,7 +32,7 @@ $(document).ready(function() {
     $('body').append(dancer.$node);
 
     window.fireDancers.push(dancer);
-    console.log(window.fireDancers);
+
   });
 
   $('.addFireLineupButton').on('click', function(event) {
@@ -80,7 +80,7 @@ $(document).ready(function() {
     var balrogDance = new balrogMakerFunction(
       $("body").height() * Math.random(),
       $("body").width() * Math.random(),
-      Math.random() * 1000
+      Math.random() * 10000
     );
     $('body').append(balrogDance.$node);
 
