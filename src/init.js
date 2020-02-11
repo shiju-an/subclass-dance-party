@@ -42,6 +42,7 @@ $(document).ready(function() {
     for (var i = 0; i < window.fireDancers.length; i++) {
       window.fireDancers[i].lineup(top, left);
       top += 50;
+      left += 50;
     }
   });
 
@@ -61,12 +62,13 @@ $(document).ready(function() {
   });
 
   $('.addGandalfLineupButton').on('click', function(event) {
-    var top = 100;
-    var left = 500;
+    var top = 250;
+    var left = 600;
 
     for (var i = 0; i < window.gandalfDancers.length; i++) {
       window.gandalfDancers[i].lineup(top, left);
       top += 50;
+      left += 25;
     }
   });
 
