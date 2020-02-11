@@ -2,6 +2,7 @@ var Balrog = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
 
   this.$node.addClass("balrog");
+  this.$node.attr("src","file:///Users/student/hrsf126-subclass-dance-party/images/balrog.png");
 };
 
 

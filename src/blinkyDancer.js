@@ -22,6 +22,7 @@ var BlinkyDancer = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
   //this.$node = $('<span class="dancer"></span>');
   this.$node.addClass("blinky");
+  this.$node.attr("src","file:///Users/student/hrsf126-subclass-dance-party/images/fire.png");
 };
 
 

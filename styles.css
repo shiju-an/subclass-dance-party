@@ -28,7 +28,8 @@ body, a:link, a:visited, a:active{
 }
 
 .blinky{
-  border:10px solid red;
+  /* border:10px solid red; */
+  height: 150px;
 }
 
 .gandalf{
@@ -39,11 +40,7 @@ body, a:link, a:visited, a:active{
 
 }
 
-
-
-
-
 .balrog{
-
-  border:10px solid rgb(0, 0, 0);
+  /* border:10px solid rgb(0, 0, 0); */
+  height: 200px;
 }
