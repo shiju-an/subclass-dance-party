@@ -3,6 +3,7 @@ var Gandalf = function(top, left, timeBetweenSteps) {
   // this.$node = $('<span class="dancer"></span>');
   //this.$node = $('<span class="dancer gandalf"></span>');
   this.$node.addClass("gandalf");
+  this.$node.attr("src","file:///Users/student/hrsf126-subclass-dance-party/images/gandalf.png");
 };
 
 

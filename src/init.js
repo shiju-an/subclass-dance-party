@@ -39,7 +39,7 @@ $(document).ready(function() {
     var gandalfMakerFunction = window[gandalfMakerFunctionName];
 
     // make a dancer with a random position
-  
+
     var gandalfDance = new gandalfMakerFunction(
       $("body").height() * Math.random(),
       $("body").width() * Math.random(),
