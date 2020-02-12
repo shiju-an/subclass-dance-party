@@ -29,8 +29,6 @@ Gandalf.prototype = Object.create(Dancer.prototype);
 //   this.$node.toggle();
 // };
 
-
-
 // Gandalf.prototype.setPosition = function(top, right) {
 //   var styleSettings = {
 //     top: top,
@@ -38,6 +36,5 @@ Gandalf.prototype = Object.create(Dancer.prototype);
 //   };
 //   this.$node.css(styleSettings);
 // };
-
 
 Gandalf.prototype.constructor = Gandalf;

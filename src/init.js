@@ -68,7 +68,7 @@ $(document).ready(function() {
     for (var i = 0; i < window.gandalfDancers.length; i++) {
       window.gandalfDancers[i].lineup(top, left);
       top += 50;
-      left += 25;
+      left += 50;
     }
   });
 
@@ -102,8 +102,5 @@ $(document).ready(function() {
   //   //debugger;
   //   $('body').css("background-image", "url('file:///Users/student/hrsf126-subclass-dance-party/images/youShallNotPass.gif')");
   // });
-
-
-
 });
 

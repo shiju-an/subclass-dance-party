@@ -33,7 +33,6 @@ body, a:link, a:visited, a:active{
 .dancer{
   position:absolute;
 }
-
 .blinky{
   /* border:10px solid red; */
   height: 150px;
@@ -42,19 +41,17 @@ body, a:link, a:visited, a:active{
   /* animation: 5s ease-in 1s infinite reverse both running slidein; */
   /* //transition: all 2s ease-in-out; */
 }
-
 @keyframes sidetoside{
   0% {
     transform: translate3d(0px, 0px, 0px);
   }
   50% {
-    transform: translate3d(300px, 0px, 0px);
+    transform: translate3d(200px, 0px, 0px);
   }
   100% {
-    transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(-0px, 0px, 0px);
   }
 }
-
 .gandalf{
   /* border:10px solid grey; */
   /* border-image-source: url(file:///Users/student/hrsf126-subclass-dance-party/images/gandalf.png); */
@@ -63,24 +60,19 @@ body, a:link, a:visited, a:active{
   animation: 3s ease-in 0s infinite alternate-reverse slidein;
   /* animation: 5s ease-in 0s infinite reverse reversed; */
 }
-
 @keyframes slidein {
   from { transform: scaleX(0); }
   to   { transform: scaleX(1); }
 }
-
 /* @keyframes reversed {
   from { transform: scaleX(1); }
   to   { transform: scaleX(0); }
 } */
-
-
 .balrog{
   /* border:10px solid rgb(0, 0, 0); */
   height: 200px;
   animation: rotation 2s infinite alternate-reverse linear;
 }
-
 @keyframes rotation {
   from {
     transform: rotate(0deg);

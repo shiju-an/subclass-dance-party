@@ -25,8 +25,6 @@ var BlinkyDancer = function(top, left, timeBetweenSteps) {
   this.$node.attr("src","images/fire.png");
 };
 
-
-
 BlinkyDancer.prototype = Object.create(Dancer.prototype);
 
 // var oldStep = Dancer.prototype.step.call(this);
